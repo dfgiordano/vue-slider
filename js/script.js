@@ -13,20 +13,20 @@ var app = new Vue(
 
                "https://best5.it/b5/wp-content/uploads/2016/09/Bradipo1-800x400.jpg"
            ],
-           imagesindex : 0,   
+           imagesIndex : 0,   
         },
         methods: {   
             changeImageRight: function () {
-                if (this.imagesindex == this.images.length -1) {
-                    this.imagesindex = -1;
+                if (this.imagesIndex == this.images.length -1) {
+                    this.imagesIndex = -1;
                 }
-                this.imagesindex++;
+                this.imagesIndex++;
             },
             changeImageLeft: function () {
-                if (this.imagesindex == 0) {
-                    this.imagesindex = this.images.length ;
+                if (this.imagesIndex == 0) {
+                    this.imagesIndex = this.images.length ;
                 }
-                 this.imagesindex--;
+                 this.imagesIndex--;
              }
         }
     }

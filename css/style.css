@@ -49,7 +49,5 @@
 }
 .menu i {
     margin: 2px;
-}
-.menu i:active {
-    color: blue;
+    color: white;
 }
