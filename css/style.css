@@ -5,36 +5,51 @@
 }
 #root {
     display: flex;
+    height: 100vh;
+}
+.container {
+    display: flex;
     margin: auto;
     width: 800px;
-    height: 100%;
+    height: 400px;
+    position: relative;
 }
-.left_arrow {
-    display: flex;
-    width : 80px;
-    height : 400px;
-    justify-content: center;
-    align-items: center;
-}
-.container_slider {
-    width: calc( 800px - 160px );
-    height : 400px;
-    
-}
+.left_arrow,
 .right_arrow {
     display: flex;
     width : 80px;
-    height : 400px;
     justify-content: center;
     align-items: center;
 }
+.slider {
+    display: flex;
+    width: calc( 800px - 160px );
+    height: 100%;
+    position:relative;
+}
+
 .left_arrow i,
 .right_arrow i {
     font-size: 40px;
     cursor: pointer;
 }
-.container_slider img {
+.slider > img {
     width: 100%;
     object-fit: cover;
     object-position: center;
+}
+.menu {
+    position: absolute;
+    bottom : 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    border-radius: 25px;
+    background-color: rgba(247, 247, 247, 0.4);
+}
+.menu i {
+    margin: 2px;
+}
+.menu i:active {
+    color: blue;
 }

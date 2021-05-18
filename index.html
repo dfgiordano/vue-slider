@@ -11,15 +11,20 @@
     </head>
     <body>
         <div id="root">
-            <div class="left_arrow">
-                <i class="fas fa-chevron-left"></i>
-            </div>
-            <div class="container_slider">
-                <img v-for = "(image) in images" src="" alt="Animals">
-            </div>
-            <div class="right_arrow">
-                <i class="fas fa-chevron-right"></i>
-            </div>
+            <div class="container">
+                <div class="left_arrow">
+                    <i @click="changeImageLeft(imagesindex)" class="fas fa-chevron-left"></i>
+                </div>
+                <div class="slider">
+                    <img :src="images[imagesindex]" alt="Animals" class="fas fa-circle">
+                </div>
+                <div class="right_arrow">
+                    <i @click="changeImageRight(imagesindex)" class="fas fa-chevron-right"></i>
+                </div>
+                <div class="menu">
+                    <i v-for="image in images" class="fa-circle fas"></i>
+                </div>
+            </div>    
         </div>
 
 

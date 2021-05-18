@@ -17,11 +17,17 @@ var app = new Vue(
         },
         methods: {   
             changeImageRight: function () {
-                this.images.index++
+                if (this.imagesindex == this.images.length -1) {
+                    this.imagesindex = -1;
+                }
+                this.imagesindex++;
             },
             changeImageLeft: function () {
-                 this.images.index--
+                if (this.imagesindex == 0) {
+                    this.imagesindex = this.images.length ;
+                }
+                 this.imagesindex--;
              }
-         }
+        }
     }
 )
