@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+#root {
+    display: flex;
+    margin: auto;
+    width: 800px;
+    height: 100%;
+}
+.left_arrow {
+    display: flex;
+    width : 80px;
+    height : 400px;
+    justify-content: center;
+    align-items: center;
+}
+.container_slider {
+    width: calc( 800px - 160px );
+    height : 400px;
+    
+}
+.right_arrow {
+    display: flex;
+    width : 80px;
+    height : 400px;
+    justify-content: center;
+    align-items: center;
+}
+.left_arrow i,
+.right_arrow i {
+    font-size: 40px;
+    cursor: pointer;
+}
+.container_slider img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
